@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Cross browser Testing" parallel="tests"  data-provider-thread-count="5">
+
+
+
+    <test name="CHROME" >
+        <parameter name="Browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.trycloud.runners.CukesRunner"></class>
+        </classes>
+    </test>
+
+
+
+
+
+
+
+</suite>
