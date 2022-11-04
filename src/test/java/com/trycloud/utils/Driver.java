@@ -36,7 +36,7 @@ public class Driver {
             WebDriverManager.chromedriver().setup();
             driverPool.set(new ChromeDriver());
             driverPool.get().manage().deleteAllCookies();
-            driverPool.get().manage().window().maximize();
+           driverPool.get().manage().window().maximize();
 
 
         } else if (browser.equals("safari")) {
@@ -49,13 +49,13 @@ public class Driver {
         }else if (browser.equals("edge")) {
             WebDriverManager.edgedriver().setup();
             driverPool.set(new EdgeDriver());
-          //  driverPool.get().manage().deleteAllCookies();
+            driverPool.get().manage().deleteAllCookies();
             driverPool.get().manage().window().maximize();
 
         } else if (browser.equals("chrome-headless")) {
             WebDriverManager.chromedriver().setup();
             driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(true)));
-        //    driverPool.get().manage().deleteAllCookies();
+            driverPool.get().manage().deleteAllCookies();
             driverPool.get().manage().window().maximize();
 
 
