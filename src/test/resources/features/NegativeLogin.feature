@@ -1,5 +1,5 @@
 
-Feature: As a user, I should be able to log in.
+Feature: As a user, I should not be able to log in.
 
 @ui
   Scenario Outline: Verify user login fail with invalid credentials
