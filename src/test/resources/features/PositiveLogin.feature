@@ -1,6 +1,7 @@
 
     Feature: As a user, I should be able to log in.
 
+@ui
   Scenario Outline: Verify login with valid credentials
     Given user on the login page
     When user types username "<username>" and password "<password>"
