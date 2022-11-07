@@ -36,6 +36,7 @@ public class Utils {
     }
 
 
+
     public static void verifyTitleEquals(String expectedTitle) {
 
         String actualTitle = Driver.getDriver().getTitle();
