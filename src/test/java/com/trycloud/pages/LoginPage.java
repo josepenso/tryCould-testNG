@@ -86,7 +86,7 @@ public class LoginPage extends BasePage{
     public void user_verify_modules(List<String> modules){
 
         for (int i=0;i<modules.size();i++){
-
+                                    //Dashboard                                 //Dashboard
             Assert.assertTrue(modules.get(i).contains(findModuleElements(modules.get(i)).getText()));
 
         }
