@@ -17,7 +17,7 @@ import java.net.URL;
 public class Driver {
 
     private static final ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
-    private static final String gridAddress = "localhost";
+    private static final String gridAddress = "35.173.134.116";
 
     public static void setupDriver(String browser) {
 
