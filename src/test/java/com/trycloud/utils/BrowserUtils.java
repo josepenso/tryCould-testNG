@@ -1,6 +1,7 @@
 package com.trycloud.utils;
 
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Utils {
+public class BrowserUtils {
     //Methods are static. Because we do not want to create an object to call those methods.
     // We just want to call those methods with class name. That is why they are static type
 
@@ -24,6 +25,8 @@ public class Utils {
      *
      * @param seconds
      */
+
+
     public static void sleep(int seconds) {
         // 1 second = 1000 millis
         // millis = seconds*1000
@@ -33,6 +36,14 @@ public class Utils {
             e.printStackTrace();
             System.out.println("Exception happened in sleep method!");
         }
+    }
+
+    public static void verifyTitle(WebDriver driver, String expectedTitle){
+
+        String actualTitle = driver.getTitle();
+
+        Assert.assertEquals(expectedTitle,actualTitle);
+
     }
 
 
