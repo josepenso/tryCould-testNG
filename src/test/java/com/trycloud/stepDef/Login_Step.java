@@ -2,7 +2,7 @@ package com.trycloud.stepDef;
 
 import com.trycloud.pages.LoginPage;
 import com.trycloud.utils.Config;
-import com.trycloud.utils.Utils;
+import com.trycloud.utils.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -31,13 +31,13 @@ public class Login_Step {
 
         cloudDriver.user_click_loginBtn();
 
-        Utils.waitUntilVisible(cloudDriver.customizeBtn,20);
+        BrowserUtils.waitUntilVisible(cloudDriver.customizeBtn,20);
 
 
     }
     @Then("verify the user should be at the dashboard {string} page")
     public void verify_the_user_should_be_at_the_dashboard_page(String title) {
-        Utils.verifyTitleEquals(title);
+        BrowserUtils.verifyTitleEquals(title);
     }
 
     @When("user enter invalid username {string} and  password {string}")

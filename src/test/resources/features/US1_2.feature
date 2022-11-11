@@ -1,11 +1,12 @@
-@Demo
+
 Feature: As a user, I should be able to log in.
 
 
       Background:
             Given user on the login page
 
-  Scenario Outline: Verify login with valid credentials
+ @demo
+     Scenario Outline: Verify login with valid credentials
 
     When user types username "<username>" and password "<password>"
     And user click the login button
@@ -18,6 +19,7 @@ Feature: As a user, I should be able to log in.
       | user99      | Userpass123 |Dashboard - Trycloud   |
 
 
+  @ui
       Scenario Outline: Verify user login fail with invalid credentials
 
         When user enter invalid username "<username>" and  password "<password>"

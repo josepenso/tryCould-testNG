@@ -2,11 +2,9 @@ package com.trycloud.pages;
 
 import com.trycloud.utils.Config;
 import com.trycloud.utils.Driver;
-import com.trycloud.utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -92,6 +90,15 @@ public class LoginPage extends BasePage{
         }
 
 
+    }
+
+
+    public void login_with_valid_credentials(){
+     Driver.getDriver().get("http://qa2.trycloud.net/");
+        //    Driver.getDriver().get(Config.getProperty("trycloudEnv"));
+        usernameBox.sendKeys(Config.getProperty("username"));
+        passwordBox.sendKeys(Config.getProperty("password"));
+        loginButton.click();
     }
 
 
