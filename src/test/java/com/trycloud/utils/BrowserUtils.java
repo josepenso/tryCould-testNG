@@ -63,6 +63,7 @@ public class BrowserUtils {
 
 
 
+
     public static void doubleClick(WebElement element) {
         Actions action = new Actions(Driver.getDriver());
         action.doubleClick(element).perform();
