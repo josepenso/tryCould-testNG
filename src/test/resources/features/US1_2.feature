@@ -15,8 +15,8 @@ Feature: As a user, I should be able to log in.
     Examples:
       | username    | password    |  title                |
       | user7       | Userpass123 |Dashboard - Trycloud   |
-  #  | user34      | Userpass123 |Dashboard - Trycloud   |
-  #  | user99      | Userpass123 |Dashboard - Trycloud   |
+      | user34      | Userpass123 |Dashboard - Trycloud   |
+      | user99      | Userpass123 |Dashboard - Trycloud   |
 
 
   @ui
