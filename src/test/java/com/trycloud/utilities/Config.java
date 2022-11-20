@@ -1,4 +1,4 @@
-package com.trycloud.utils;
+package com.trycloud.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

@@ -1,12 +1,10 @@
 package com.trycloud.pages;
 
-import com.trycloud.utils.Config;
-import com.trycloud.utils.Driver;
+import com.trycloud.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
-public  abstract class  BasePage {
+public  abstract class BasePage {
     public void navigateTo(){
 
     }

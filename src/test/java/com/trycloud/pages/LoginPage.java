@@ -1,7 +1,7 @@
 package com.trycloud.pages;
 
-import com.trycloud.utils.Config;
-import com.trycloud.utils.Driver;
+import com.trycloud.utilities.Config;
+import com.trycloud.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,7 +25,7 @@ public class LoginPage extends BasePage{
 
 
     @FindBy(xpath = "//input[@type='submit']")
-    private WebElement loginButton;
+    public WebElement loginButton;
 
 
     @FindBy(xpath = "//a[@id='lost-password']")
@@ -36,6 +36,20 @@ public class LoginPage extends BasePage{
 
     @FindBy(xpath = "//div//p[contains(text(),'Wrong username')]")
     public WebElement wrongMsg;
+
+    @FindBy(xpath = "//div[@class='header-right']//span[@aria-label='Magnify icon']")
+    public WebElement magnifyIcon;
+
+    @FindBy(xpath = "//form//input[@type='search']")
+    public WebElement searchInput;
+
+
+
+    public WebElement confirmFolder(String folderName){
+        String xPath="(//li//span[contains(text(),'"+folderName+"')])[1]";
+
+        return Driver.getDriver().findElement(By.xpath(xPath));
+    }
 
 
 
@@ -49,12 +63,22 @@ public class LoginPage extends BasePage{
     }
 
 
+
+    public void login(){
+        Driver.getDriver().get(Config.getProperty("trycloudEnv"));
+        usernameBox.sendKeys(Config.getProperty("username"));
+        passwordBox.sendKeys(Config.getProperty("password"));
+        loginButton.click();
+    }
+
+
     public void trycloud_login(String username,String password){
         usernameBox.sendKeys(username);
         passwordBox.sendKeys(password);
     }
 
     public void user_click_loginBtn(){
+
         loginButton.click();
 
     }
@@ -78,27 +102,16 @@ public class LoginPage extends BasePage{
 
         actionRunner.moveToElement(findModuleElements(option)).pause(3).click().perform();
 
-
     }
+
 
     public void user_verify_modules(List<String> modules){
 
         for (int i=0;i<modules.size();i++){
-                                    //Dashboard                                 //Dashboard
+
             Assert.assertTrue(modules.get(i).contains(findModuleElements(modules.get(i)).getText()));
 
         }
-
-
-    }
-
-
-    public void login_with_valid_credentials(){
-     Driver.getDriver().get("http://qa2.trycloud.net/");
-        //    Driver.getDriver().get(Config.getProperty("trycloudEnv"));
-        usernameBox.sendKeys(Config.getProperty("username"));
-        passwordBox.sendKeys(Config.getProperty("password"));
-        loginButton.click();
     }
 
 

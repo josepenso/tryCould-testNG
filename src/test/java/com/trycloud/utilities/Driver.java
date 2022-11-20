@@ -1,4 +1,4 @@
-package com.trycloud.utils;
+package com.trycloud.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +17,7 @@ import java.net.URL;
 public class Driver {
 
     private static final ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
-    private static final String gridAddress = "35.173.134.116";
+    private static final String gridAddress = "localhost";
 
     public static void setupDriver(String browser) {
 

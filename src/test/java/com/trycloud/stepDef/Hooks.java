@@ -1,6 +1,6 @@
 package com.trycloud.stepDef;
 
-import com.trycloud.utils.Driver;
+import com.trycloud.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;

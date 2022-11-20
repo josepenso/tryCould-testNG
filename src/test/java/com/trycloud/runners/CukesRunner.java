@@ -1,6 +1,6 @@
 package com.trycloud.runners;
 
-import com.trycloud.utils.Driver;
+import com.trycloud.utilities.Driver;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -16,7 +16,7 @@ import org.testng.annotations.*;
         features = "src/test/resources/features",
         glue = "com/trycloud/stepDef",
         dryRun = false,
-        tags = "@demo",
+        tags = "@miniRegression",
         publish = true
 )
 

@@ -1,10 +1,10 @@
-@TS4-123
+@smoke2
 Feature: As a user, I should be able to access to Talks module
 
 
     Story: As a user, I should be able to access to Talks module.
     Background:
-      Given user on the dashboard page
+      Given user on the dashboard page with these "<username>" and "<password>"
       When the user clicks the "Talk" module
 
   Scenario: verify users to access to Talks module

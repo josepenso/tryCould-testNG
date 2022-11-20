@@ -1,8 +1,8 @@
 package com.trycloud.stepDef;
 
 import com.trycloud.pages.LoginPage;
-import com.trycloud.utils.Config;
-import com.trycloud.utils.BrowserUtils;
+import com.trycloud.utilities.BrowserUtils;
+import com.trycloud.utilities.Config;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,7 +10,7 @@ import io.cucumber.java.en.When;
 import java.util.List;
 
 
-public class Login_Step {
+public class US1_2_3Steps {
 
     LoginPage cloudDriver= new LoginPage();
     @Given("user on the login page")
@@ -64,6 +64,7 @@ public class Login_Step {
     public void the_users_log_in_with_valid_credentials() {
         cloudDriver.trycloud_login(Config.getProperty("username"),Config.getProperty("password"));
         cloudDriver.user_click_loginBtn();
+
     }
 
 

@@ -1,5 +1,6 @@
 package com.trycloud.pages;
-import com.trycloud.utils.Driver;
+
+import com.trycloud.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,6 +36,10 @@ public class TalkPage {
         String xPath="//div[@class='message-group']//div[contains(text(),'"+text+"')]";
         return Driver.getDriver().findElement(By.xpath(xPath));
     }
+
+
+
+
 
 
 
