@@ -121,7 +121,8 @@ public class FilesPage {
     @FindBy(css = "#view13-input-folder")
     public WebElement newFolderNameInput;
 
-
+    @FindBy(xpath = "//div[@id='app-navigation-toggle']")
+    public WebElement toggleBtn;
 
 
     public void uploadBtnClick() {

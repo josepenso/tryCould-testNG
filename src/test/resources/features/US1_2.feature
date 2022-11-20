@@ -5,7 +5,7 @@ Feature: As a user, I should be able to log in.
       Background:
             Given user on the login page
 
-    @miniRegression
+
     Scenario Outline: Verify login with valid credentials
 
     When user types username "<username>" and password "<password>"

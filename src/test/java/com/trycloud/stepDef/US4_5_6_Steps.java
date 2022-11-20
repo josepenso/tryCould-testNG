@@ -48,6 +48,10 @@ public class US4_5_6_Steps {
     @When("user click the {string} sub-module on the left side")
     public void user_click_the_sub_module_on_the_left_side(String option) {
 
+       if (filesRunner.toggleBtn.isDisplayed()){
+           filesRunner.toggleBtn.click();
+           filesRunner.clickFavorites();
+       }
         filesRunner.clickFavorites();
 
 
