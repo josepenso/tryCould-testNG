@@ -5,12 +5,12 @@ Feature: As a user, I should be able to log in.
       Background:
             Given user on the login page
 
- @demo
-     Scenario Outline: Verify login with valid credentials
+    @miniRegression
+    Scenario Outline: Verify login with valid credentials
 
     When user types username "<username>" and password "<password>"
     And user click the login button
-    Then verify the user should be at the dashboard "<title>" page
+    Then verify the page title is "<title>"
 
     Examples:
       | username    | password    |  title                |
@@ -19,7 +19,7 @@ Feature: As a user, I should be able to log in.
       | user99      | Userpass123 |Dashboard - Trycloud   |
 
 
-  @ui
+
       Scenario Outline: Verify user login fail with invalid credentials
 
         When user enter invalid username "<username>" and  password "<password>"
