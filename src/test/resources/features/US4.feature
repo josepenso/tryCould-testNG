@@ -2,7 +2,7 @@
 Feature: As a user, I should be able to access to Files module.
 
 
-
+  @smokeVerifyTitle
   Scenario: verify users can access to Files module
 
     Given user on the dashboard page with these "User32" and "Userpass123"
@@ -12,7 +12,7 @@ Feature: As a user, I should be able to access to Files module.
 
 
 
-
+  @miniRegression
   Scenario: verify users can select all the uploaded files from the page
 
     Given user on the dashboard page with these "User65" and "Userpass123"

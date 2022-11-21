@@ -35,7 +35,7 @@ public class Driver {
         } else if (browser.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
             driverPool.set(new ChromeDriver());
-            driverPool.get().manage().deleteAllCookies();
+            //driverPool.get().manage().deleteAllCookies();
            driverPool.get().manage().window().maximize();
 
 
@@ -64,6 +64,7 @@ public class Driver {
                 URL url = new URL("http://"+gridAddress+":4444/wd/hub");
                 ChromeOptions options = new ChromeOptions();
                 driverPool.set(new RemoteWebDriver(url, options));
+                driverPool.get().manage().window().maximize();
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }

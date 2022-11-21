@@ -1,19 +1,19 @@
-@smoke2
+
 Feature: As a user, I should be able to access to Talks module
 
 
     Story: As a user, I should be able to access to Talks module.
     Background:
-      Given user on the dashboard page with these "<username>" and "<password>"
+      Given user on the dashboard page with these "User64" and "Userpass123"
       When the user clicks the "Talk" module
-
+   @smokeVerifyTitle
   Scenario: verify users to access to Talks module
 
     Then verify the page title is "Talk - Trycloud"
 
 
 
-
+  @miniRegression
   Scenario: verify users to send a message
 
     And user search user from the search box

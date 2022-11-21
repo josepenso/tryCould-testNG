@@ -189,7 +189,7 @@ public class FilesPage {
     public void selectAllFiles(String option) {
         if (fileNames.size() == actionDots.size()) {
             if (option.equals("Remove from favorites")) {
-                BrowserUtils.waitFor(2);
+                BrowserUtils.waitFor(3);
                 removeFromFavorite();
             } else if (option.equals("Add to favorites")) {
                 addToFavorites();

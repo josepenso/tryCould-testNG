@@ -1,10 +1,10 @@
 Feature: As a user, I should be able to write comments to files/folders.
 
 
-  @smoke
+  @miniRegression @ui
   Scenario: Verify users to write comments to files/folder
 
-    Given user on the dashboard page with these "<username>" and "<password>"
+    Given user on the dashboard page with these "User64" and "Userpass123"
     When the user clicks the "Files" module
     And user click "Actions"-icon  from any file on the page
     And user choose the "Details" option

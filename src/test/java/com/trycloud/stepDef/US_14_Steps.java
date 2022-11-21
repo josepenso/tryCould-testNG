@@ -12,7 +12,7 @@ import org.testng.Assert;
 public class US_14_Steps {
 
     LoginPage loginRunner= new LoginPage();
-    String folderName="test";
+    String folderName="Test";
 
     @When("the user clicks the magnifier icon on the right top")
     public void the_user_clicks_the_magnifier_icon_on_the_right_top() {
@@ -25,6 +25,7 @@ public class US_14_Steps {
     @When("users search any existing file,folder,username")
     public void users_search_any_existing_file_folder_user_name() {
         loginRunner.searchInput.sendKeys(folderName);
+        BrowserUtils.sleep(2);
         BrowserUtils.waitUntilVisible(loginRunner.confirmFolder(folderName),20);
 
     }
