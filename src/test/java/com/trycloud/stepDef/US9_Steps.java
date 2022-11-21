@@ -41,7 +41,7 @@ public class US9_Steps {
 
         //  String rename="Rename";
 
-            BrowserUtils.sleep(2);
+            BrowserUtils.sleep(4);
          //   BrowserUtils.waitUntilClickable(filesRunner.findOptionElements(rename), 20);
             filesRunner.select_option(option);
             BrowserUtils.sleep(2);
