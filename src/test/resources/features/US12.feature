@@ -2,7 +2,7 @@
 Feature: As a user, I should be able to access to Contacts module.
 
 
-  @smokeVerifyTitle
+  @smoke
   Scenario:  verify user access to Talks module
 
     Given user on the dashboard page with these "User101" and "Userpass123"

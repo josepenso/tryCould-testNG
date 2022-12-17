@@ -3,7 +3,7 @@
 Feature: As a user, I should be able to view the contact list.
 
 
-  @miniRegression
+  @smoke
 Scenario:  verify users can see all the contact names on the contact list
 
   Given user on the dashboard page with these "User39" and "Userpass123"

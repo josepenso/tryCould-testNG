@@ -16,7 +16,7 @@ import org.testng.annotations.*;
         features = "src/test/resources/features",
         glue = "com/trycloud/stepDef",
         dryRun = false,
-        tags = "@smokeVerifyTitle or @miniRegression",
+        tags = "@smoke",
         publish = true
 )
 

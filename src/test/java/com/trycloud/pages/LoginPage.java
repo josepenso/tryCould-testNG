@@ -12,6 +12,7 @@ import org.testng.Assert;
 import java.util.List;
 
 public class LoginPage extends BasePage{
+
     public LoginPage() {
         PageFactory.initElements(Driver.getDriver(),this);
     }

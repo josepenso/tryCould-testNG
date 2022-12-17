@@ -1,7 +1,7 @@
 Feature:As a user, I should be able to search any item/ users from the homepage.
 
 
-  @miniRegression
+  @smoke
   Scenario: Verify users can search any files/folder/users from the search box.
 
 

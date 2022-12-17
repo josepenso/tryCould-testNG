@@ -14,7 +14,8 @@ public  abstract class BasePage {
 
     public void click_on_module_option(String option){
     }
-    public WebElement user_choose(String option){
+
+    public  WebElement user_choose(String option){
 
         return Driver.getDriver().findElement(By.xpath(option));
     }

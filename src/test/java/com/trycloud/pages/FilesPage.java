@@ -138,6 +138,9 @@ public class FilesPage {
         Actions action= new Actions(Driver.getDriver());
         action.moveToElement(findOptionElements(option)).pause(3).click().perform();
 
+
+
+
     }
 
     public WebElement getfileUploadedAction(String name) {

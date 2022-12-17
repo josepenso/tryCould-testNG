@@ -27,31 +27,33 @@ public class US9_Steps {
 
         BrowserUtils.verifyTitleContains(title);
 
+
     }
     @When("user click {string}-icon  from any file on the page")
     public void user_click_action_icon_from_any_file_on_the_page(String option) {
 
 
-       BrowserUtils.waitUntilVisible(filesRunner.tBodyElement,20);
+      // BrowserUtils.waitUntilVisible(filesRunner.tBodyElement,20);
+        BrowserUtils.sleep(2);
         filesRunner.select_option(option);
 
     }
     @When("user choose the {string} option")
     public void user_choose_the_option(String option) {
 
-        //  String rename="Rename";
 
-            BrowserUtils.sleep(4);
-         //   BrowserUtils.waitUntilClickable(filesRunner.findOptionElements(rename), 20);
+
+            BrowserUtils.sleep(2);
             filesRunner.select_option(option);
             BrowserUtils.sleep(2);
+
+
 
     }
     @When("user write a {string} inside the input box")
     public void user_write_a_comment_inside_the_input_box(String comment) {
 
 
-        BrowserUtils.waitUntilClickable(filesRunner.findDetailsOptions(comment),20);
         filesRunner.findDetailsOptions(comment).click();
        filesRunner.inputMsg.sendKeys(Config.getProperty("randomMsg"));
 
@@ -65,7 +67,7 @@ public class US9_Steps {
     @Then("Verify the comment is displayed in the comment section.")
     public void verify_the_comment_is_displayed_in_the_comment_section() {
 
-        BrowserUtils.sleep(4);
+        BrowserUtils.sleep(1);
         Assert.assertTrue(filesRunner.confirmChat(Config.getProperty("randomMsg")).isDisplayed());
 
 
