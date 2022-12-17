@@ -2,7 +2,7 @@ Feature: As a user, I should be able to access to Files module - Favorites butto
 
 
 
-  @smoke
+ 
   Scenario: Verify users to add files to Favorites
 
     Given user on the dashboard page with these "User50" and "Userpass123"
