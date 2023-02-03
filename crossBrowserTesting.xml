@@ -6,13 +6,19 @@
 
 
 
-    <test name="Chrome">
+    <test name="Chrome" thread-count="3" >
         <parameter name="Browser" value="chrome"></parameter>
         <classes>
             <class name="com.trycloud.runners.CukesRunner"></class>
         </classes>
     </test>
 
+    <test name="firefox" thread-count="2">
+        <parameter name="Browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.trycloud.runners.CukesRunner2"></class>
+        </classes>
+    </test>
 
 
 
