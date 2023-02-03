@@ -6,7 +6,7 @@
 
 
 
-    <test name="Chrome" thread-count="3" >
+    <test name="Chrome" thread-count="2" >
         <parameter name="Browser" value="chrome-headless"></parameter>
         <classes>
             <class name="com.trycloud.runners.CukesRunner"></class>
