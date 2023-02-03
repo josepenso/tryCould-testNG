@@ -2,7 +2,7 @@
 Feature: As a user, I should be able to access to Files module.
 
 
-  @smoke
+  @smoke @firefox
   Scenario: verify users can access to Files module
 
     Given user on the dashboard page with these "User32" and "Userpass123"
