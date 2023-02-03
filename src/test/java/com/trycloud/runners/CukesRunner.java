@@ -16,7 +16,7 @@ import org.testng.annotations.*;
         features = "src/test/resources/features",
         glue = "com/trycloud/stepDef",
         dryRun = false,
-        tags = "@parallel or @firefox",
+        tags = "@chrome or @firefox",
         publish = true
 )
 
