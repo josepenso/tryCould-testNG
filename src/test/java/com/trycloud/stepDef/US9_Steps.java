@@ -43,7 +43,7 @@ public class US9_Steps {
 
 
 
-            BrowserUtils.sleep(2);
+            BrowserUtils.sleep(5);
             filesRunner.select_option(option);
             BrowserUtils.sleep(2);
 
