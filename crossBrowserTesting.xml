@@ -13,7 +13,7 @@
         </classes>
     </test>
 
-    <test name="firefox" thread-count="2">
+    <test name="firefox" thread-count="3">
         <parameter name="Browser" value="firefox-headless"></parameter>
         <classes>
             <class name="com.trycloud.runners.CukesRunner2"></class>
