@@ -21,7 +21,7 @@ import org.testng.annotations.Parameters;
         features = "src/test/resources/features",
         glue = "com/trycloud/stepDef",
         dryRun = false,
-        tags = "@crossBrowser2",
+        tags = "@firefox",
         publish = true
 )
 public class CukesRunner2 extends AbstractTestNGCucumberTests {
