@@ -7,7 +7,7 @@
 
 
     <test name="Chrome" >
-        <parameter name="Browser" value="chrome"></parameter>
+        <parameter name="Browser" value="firefox"></parameter>
         <classes>
             <class name="com.trycloud.runners.CukesRunner"></class>
         </classes>
