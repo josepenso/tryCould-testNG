@@ -1,7 +1,7 @@
 Feature: As a user, I should be able to write comments to files/folders.
 
 
-  @smoke @rerun
+  @smoke @rerun @firefox
   Scenario: Verify users to write comments to files/folder
 
     Given user on the dashboard page with these "User64" and "Userpass123"
