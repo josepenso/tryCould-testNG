@@ -7,6 +7,7 @@ Feature: As a user, I should be able to access to Talks module
       Given user on the dashboard page with these "User64" and "Userpass123"
       When the user clicks the "Talk" module
 
+ @firefox
   Scenario: verify users to access to Talks module
 
     Then verify the page title is "Talk - Trycloud"
